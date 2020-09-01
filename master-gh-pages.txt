@@ -1,0 +1,11 @@
+// Referencia: http://lea.verou.me/2011/10/easily-keep-gh-pages-in-sync-with-master/
+
+$ git add.
+$ git status // para ver qué cambios se van a realizar
+$ git commit -m 'Algún mensaje de confirmación descriptivo'
+$ git push origin master
+
+$ git checkout gh-pages // vaya a la rama gh-pages
+$ git rebase master // actualiza gh-pages con master
+$ git push origin gh-pages // confirma los cambios
+$ git checkout master // regresa a la rama master
