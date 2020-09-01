@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: rgb(214, 214, 214);
+    font-family: 'Monserrat', sans-serif;
+}
+
+form {
+    width: 350px;
+    height: 450px;
+    background: rgb(214, 214, 214);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #fff;
+}
+
+form h3,
+button {
+    letter-spacing: -0.2px;
+    color: #61677c;
+    text-shadow: 1px 1px 1px #fff;
+    padding: 32px 0;
+    text-align: center;
+}
+
+form .form-group input {
+    padding: 5px 0 5px 10px;
+    font-family: 'FontAwesome';
+    border-radius: 320px;
+    background: rgb(214, 214, 214);
+    font-size: 16px;
+    text-shadow: 1px 1px 0 #fff;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+button {
+    width: 60%!important;
+    color: #AE1100!important;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc!important;
+    transition: all 0.2s ease-in-out;
+    border-radius: 320px!important;
+}
+
+button:hover,
+.btn-icon:hover {
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc!important;
+    text-shadow: 1px 1px 1px rgb(248, 179, 179);
+}
+
+button:active,
+.btn-icon:active {
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff!important;
+}
+
+form .form-group input:focus {
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff!important;
+}
+
+input:hover {
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc!important;
+}
+
+input:active {
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff!important;
+}
+
+.btn-icon {
+    color: rgb(35, 35, 122)!important;
+    width: 48px!important;
+    height: 48px!important;
+    line-height: 0!important;
+    border-radius: 8px!important;
+    outline: 0!important;
+    box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc!important;
+    transition: all 0.2s ease-in-out;
+}

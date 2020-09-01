@@ -1,0 +1,338 @@
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+    body {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+        background-color: #fff;
+    }
+    /* ESTILO CARUSEL */
+    
+    .carrusel {
+        max-height: 1000px;
+        margin: 0 auto;
+    }
+    
+    .carrusel img {
+        height: 700px;
+        object-fit: cover;
+    }
+    
+    .carrusel ol li {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+    }
+    
+    .carousel-inner .carousel-item .__carousel-caption {
+        overflow: hidden;
+        left: 0;
+        animation-name: slidein;
+        background-color: rgba(0, 0, 0, .5);
+        animation: blur 1s ease 0s;
+        -webkit-animation: blur 1s ease 0s;
+        -moz-animation: blur 1s ease 0s;
+    }
+    
+    @keyframes blur {
+        0%,
+        90% {
+            -webkit-filter: blur(0px);
+            -moz-filter: blur(0px);
+            -o-filter: blur(0px);
+            -ms-filter: blur(0px);
+        }
+        50% {
+            -webkit-filter: blur(50px);
+            -moz-filter: blur(50px);
+            -o-filter: blur(50px);
+            -ms-filter: blur(50px);
+        }
+    }
+    
+    .carousel-inner .carousel-item .__carousel-caption p {
+        font-weight: 700;
+        font-size: 15px;
+    }
+    
+    .carousel-inner .carousel-item .__carousel-caption h6 {
+        font-size: 30px;
+    }
+    
+    .carousel-inner .carousel-item .__carousel-caption p,
+    .carousel-inner .carousel-item .__carousel-caption h6 {
+        left: 80px;
+        animation-duration: 1.5s;
+        animation-name: slidein;
+    }
+    
+    @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+    
+    .carousel-inner .carousel-item .__carousel-caption .__img-caption {
+        margin-left: 40px;
+        height: 100%;
+        max-height: 100px;
+    }
+    
+    @media screen and (max-width: 700px) {
+        .carrusel img {
+            height: 400px;
+        }
+        .carousel-inner .carousel-item .__carousel-caption h6 {
+            font-size: 30px;
+        }
+    }
+    /* FIN ESTILO CARUSEL */
+    
+    body .__background-principal .__textos-current-series {
+        position: absolute;
+        bottom: 130px;
+        left: 80px;
+    }
+    
+    @media (min-width: 768px) {
+        body .__background-principal {
+            min-height: 20vw;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        body .__background-principal {
+            min-height: 400px;
+        }
+    }
+    
+    body header .navbar {
+        color: #1ace98;
+        backdrop-filter: blur(10px)!important;
+        background-color: rgba(225, 225, 225, 0.9)!important;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    body header .navbar .__titles h1 {
+        font-size: 30px;
+        text-shadow: 2px 2px 15px #fff;
+    }
+    
+    body header .navbar .__titles h3 {
+        font-size: 18px;
+        text-shadow: 2px 2px 15px #fff;
+    }
+    
+    body header .navbar .__titles img {
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+    }
+    
+    body header .navbar .navbar-nav .nav-item {
+        transition: all 3s linear;
+        height: 35px;
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 700;
+    }
+    
+    .activo {
+        border-bottom: 2px solid #1ace98!important;
+        color: #1ace98!important;
+        font-weight: bolder!important;
+    }
+    
+    body .__textos {
+        position: absolute;
+        bottom: 50px;
+        left: 80px;
+    }
+    
+    section .__div-left {
+        background-image: url(../img/office.jpg);
+        min-height: 500px;
+        background-size: cover;
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); */
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .__div-left {
+            min-height: 20vw;
+        }
+    }
+    
+    @media only screen and (min-width: 1200px) {
+        .__div-left {
+            min-height: 400px;
+        }
+    }
+    
+    section .__div-right {
+        background-image: url(../img/cafe.jpg);
+        min-height: 500px;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); */
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .__div-right {
+            min-height: 20vw;
+        }
+        body .__background-principal .__textos-current-series,
+        body .__textos,
+        .carousel-inner .carousel-item .__carousel-caption p,
+        .carousel-inner .carousel-item .__carousel-caption h6 {
+            left: 0;
+        }
+        body .__background-principal .__textos-current-series {
+            top: 480px;
+        }
+        [class*="col-"] {
+            width: 100%;
+        }
+    }
+    
+    @media only screen and (min-width: 1200px) {
+        .__div-right {
+            min-height: 500px;
+        }
+    }
+    
+    section .__give {
+        background-color: #1ace98;
+    }
+    
+    section .__give a {
+        color: #1ace98;
+    }
+    /* ESTILO CARDS */
+    
+     :root {
+        --background-dark: #fff;
+        --text-light: rgba(255, 255, 255, 0.6);
+        --text-lighter: rgba(255, 255, 255, 0.9);
+        --spacing-s: 8px;
+        --spacing-m: 16px;
+        --spacing-l: 24px;
+        --spacing-xl: 32px;
+        --spacing-xxl: 64px;
+        --width-container: 1200px;
+    }
+    
+    .hero-section {
+        align-items: flex-start;
+        display: flex;
+        min-height: 100%;
+        justify-content: center;
+        padding: var(--spacing-xxl) var(--spacing-l);
+    }
+    
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: var(--spacing-l);
+        grid-row-gap: var(--spacing-l);
+        max-width: var(--width-container);
+        width: 100%;
+    }
+    
+    @media(min-width: 540px) {
+        .card-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media(min-width: 960px) {
+        .card-grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    
+    .card {
+        list-style: none;
+        position: relative;
+    }
+    
+    .card:before {
+        content: '';
+        display: block;
+        padding-bottom: 150%;
+        width: 90%;
+    }
+    
+    .card__background {
+        background-size: cover;
+        background-position: center;
+        border-radius: var(--spacing-s);
+        bottom: 0;
+        filter: brightness(0.75) saturate(1.2) contrast(0.85);
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform-origin: center;
+        trsnsform: scale(1) translateZ(0);
+        transition: filter 200ms linear, transform 200ms linear;
+    }
+    
+    .card:hover .card__background {
+        transform: scale(1.05) translateZ(0);
+    }
+    
+    .card-grid:hover>.card:not(:hover) .card__background {
+        filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+    }
+    
+    .card__content {
+        left: 0;
+        padding: var(--spacing-l);
+        position: absolute;
+        top: 0;
+        height: 100%;
+    }
+    
+    .card__category {
+        color: var(--text-light);
+        font-size: 0.9rem;
+        margin-bottom: var(--spacing-s);
+        text-transform: uppercase;
+    }
+    
+    .card__heading {
+        color: var(--text-lighter);
+        font-size: 1.9rem;
+        text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+        line-height: 1.4;
+        word-spacing: 100vw;
+    }
+    
+    .hero-section .card-grid .card .card__content .__btn {
+        width: 40%;
+        z-index: 999!important;
+        border-radius: var(--spacing-s);
+        background-color: rgba(0, 0, 0, 0.65);
+        color: rgb(26, 206, 152);
+        font-weight: bold;
+        transition: all 0.3s;
+        position: absolute!important;
+        left: 30%;
+        bottom: 25px;
+    }
+    
+    .hero-section .card-grid .card .card__content .__btn:hover {
+        z-index: 999!important;
+        background-color: rgba(26, 206, 152, 0.65)!important;
+        color: #000!important;
+    }
+    /* FIN ESTILO CARDS */
