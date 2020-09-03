@@ -1,4 +1,4 @@
-/*     @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
     body {
         padding: 0;
         margin: 0;
@@ -111,7 +111,7 @@
     }
     
     body header .navbar {
-        color: #1ace98;
+        color: #05769C;
         backdrop-filter: blur(10px)!important;
         background-color: rgba(225, 225, 225, 0.9)!important;
         width: 100%;
@@ -144,8 +144,8 @@
     }
     
     .activo {
-        border-bottom: 2px solid #1ace98!important;
-        color: #1ace98!important;
+        border-bottom: 2px solid #05769C!important;
+        color: #05769C!important;
         font-weight: bolder!important;
     }
     
@@ -211,11 +211,14 @@
     }
     
     section .__give {
-        background-color: #1ace98;
+        background: linear-gradient(120deg, #057, #375);
+        color: #05769C!important;
     }
     
-    section .__give a {
-        color: #1ace98;
+    section .__give a:hover {
+        background-color: #05769C;
+        color: #fff;
+        outline: none;
     }
     /* ESTILO CARDS */
     
@@ -283,7 +286,7 @@
         right: 0;
         top: 0;
         transform-origin: center;
-        trsnsform: scale(1) translateZ(0);
+        transform: scale(1) translateZ(0);
         transition: filter 200ms linear, transform 200ms linear;
     }
     
@@ -324,7 +327,7 @@
         z-index: 999!important;
         border-radius: var(--spacing-s);
         background-color: rgba(0, 0, 0, 0.65);
-        color: rgb(26, 206, 152);
+        color: #05769C;
         font-weight: bold;
         transition: all 0.3s;
         position: absolute!important;
@@ -334,159 +337,176 @@
     
     .hero-section .card-grid .card .card__content .__btn:hover {
         z-index: 999!important;
-        background-color: rgba(26, 206, 152, 0.65)!important;
-        color: #000!important;
+        background-color: #fff!important;
+        color: #05769C!important;
     }
     /* FIN ESTILO CARDS */
-
     /* ESTILO FOOTER */
     
-      
-      .footer {
-          background-color: #1ace98;
-      }
-
-
-      .footer-content {
-        padding: 0!important;
-        position: relative;
-      }
-      
-      
-      .footer-content .footer-social-links {
-          background-color: #1ace98;
-          height: 54px;
-          width: 100vw;
-          position: relative;
-          right: 0!important;
-
-      }
-      
-      .footer-social-amoeba-svg {
-          height: 54px;
-          left: 0;
-          display: block;
-          position: absolute;
-          top: 0;
-          width: 236px;
-      }
-      
-      .footer-social-amoeba-path {
-          fill: #000000;
-      }
-      
-      .footer-social-link.linkedin {
-          height: 26px;
-          left: 3px;
-          top: 11px;
-          width: 26px;
-      }
-      
-      .footer-social-link {
-          display: block;
-          padding: 10px;
-          position: absolute;
-      }
-      
-      .hidden-link-text {
-          position: absolute;
-          clip: rect(1px 1px 1px 1px);
-          clip: rect(1px,1px,1px,1px);
-          -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
-          clip-path: inset(0px 0px 99.9% 99.9%);
-          overflow: hidden;
-          height: 1px;
-          width: 1px;
-          padding: 0;
-          border: 0;
-          top: 50%;
-      }
-      
-      .footer-social-icon-svg {
-          display: block;
-      }
-      
-      .footer-social-icon-path {
-          fill: #fffff2;
-          transition: fill .2s;
-      }
-      
-      .footer-social-link.twitter {
-          height: 28px;
-          left: 62px;
-          top: 3px;
-          width: 28px;
-      }
-      
-      .footer-social-link.youtube {
-          height: 24px;
-          left: 123px;
-          top: 12px;
-          width: 24px;
-      }
-      
-      .footer-social-link.github {
-          height: 34px;
-          left: 172px;
-          top: 7px;
-          width: 34px;
-      }
-      
-      .footer-copyright {
-          background-color: #1ace98;
-          color: #000!important;
-          padding: 15px 30px;
-        text-align: center;
-      }
-      
-      .footer-copyright-wrapper {
-          margin-left: auto;
-          margin-right: auto;
-          max-width: 1200px;
-      }
-      
-      .footer-copyright-text {
-        color: #000!important;
-          font-size: 16px;
-          font-weight: 500;
-          line-height: 18px;
-          margin-bottom: 0;
-          margin-top: 0;
-      }
-      
-      .footer-copyright-link {
-          color: #fff;
-          text-decoration: none;
-      }
-      
-      
-      /* Media Query For different screens */
-      @media (min-width:320px) and (max-width:479px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-        .footer-content {
-          margin-left: auto;
-          margin-right: auto;
-          max-width: 1230px;
-          position: relative;
-        }
-      }
-      @media (min-width:480px) and (max-width:599px)  { /* smartphones, Android phones, landscape iPhone */
-        .footer-content {
-          margin-left: auto;
-          margin-right: auto;
-          max-width: 1230px;
-          position: relative;
-        }
-      }
-      @media (min-width:600px) and (max-width: 800px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-        .footer-content {
-          margin-left: auto;
-          margin-right: auto;
-          max-width: 1230px;
-          position: relative;
-        }
-      }
-      
+    .footer {
+        background-color: #000;
+    }
     
-      
-
-    /* FIN ESTILO FOOTER */ 
+    .site-footer hr {
+        border-top-color: #bbb;
+        opacity: 0.5
+    }
+    
+    .site-footer hr.small {
+        margin: 20px 0
+    }
+    
+    .site-footer h6 {
+        color: #05769C;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: 5px;
+        letter-spacing: 2px
+    }
+    
+    .site-footer a {
+        color: #fff;
+    }
+    
+    .site-footer a:hover {
+        text-decoration: none;
+    }
+    
+    .footer-links {
+        padding-left: 0;
+        list-style: none;
+    }
+    
+    .footer-links li {
+        display: block;
+    }
+    
+    .footer-links a {
+        color: #fff;
+    }
+    
+    .site-footer .footer-links li a:hover {
+        color: #375C69!important;
+    }
+    
+    .footer-links.inline li {
+        display: inline-block;
+    }
+    
+    .site-footer .social-icons {
+        text-align: center;
+    }
+    
+    .footer-content {
+        padding: 0!important;
+        width: 100vw;
+        margin: 0;
+    }
+    
+    .footer-social-links {
+        bottom: 0;
+        height: 54px;
+        width: 236px;
+    }
+    
+    .footer-social-amoeba-svg {
+        height: 54px;
+        left: 0;
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 236px;
+    }
+    
+    .footer-social-amoeba-path {
+        fill: #05769C;
+    }
+    
+    .footer-social-link.linkedin {
+        height: 26px;
+        left: 3px;
+        top: 11px;
+        width: 26px;
+    }
+    
+    .footer-social-link {
+        display: block;
+        padding: 10px;
+        position: absolute;
+    }
+    
+    .hidden-link-text {
+        position: absolute;
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+        -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+        clip-path: inset(0px 0px 99.9% 99.9%);
+        overflow: hidden;
+        height: 1px;
+        width: 1px;
+        padding: 0;
+        border: 0;
+        top: 50%;
+    }
+    
+    .footer-social-icon-svg {
+        display: block;
+    }
+    
+    .footer-social-icon-path {
+        fill: #000;
+        transition: fill .2s;
+    }
+    
+    .footer-social-link.twitter {
+        height: 28px;
+        left: 62px;
+        top: 3px;
+        width: 28px;
+    }
+    
+    .footer-social-link.youtube {
+        height: 24px;
+        left: 123px;
+        top: 12px;
+        width: 24px;
+    }
+    
+    .footer-social-link.instagram {
+        height: 34px;
+        left: 173px;
+        top: 7px;
+        width: 34px;
+    }
+    
+    .instagram-logo path {
+        fill: #000;
+    }
+    
+    .instagram-logo .logo {
+        fill: #000;
+    }
+    
+    .footer-copyright {
+        background-color: #000;
+        color: #fff!important;
+        padding: 15px 30px;
+        text-align: center;
+    }
+    
+    .footer-copyright-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+    
+    .footer-copyright-text {
+        color: #fff!important;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    /* FIN ESTILO FOOTER */
